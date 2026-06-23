@@ -68,7 +68,6 @@ The main objective of LogiStock is to digitalize and optimize the supply chain p
 - React
 - TypeScript
 - Tailwind CSS
-- ShadCN UI
 - Axios
 
 ### Backend
@@ -84,7 +83,6 @@ The main objective of LogiStock is to digitalize and optimize the supply chain p
 - Git
 - GitHub
 - Postman
-- Figma
 - IntelliJ IDEA
 - VS Code
 
