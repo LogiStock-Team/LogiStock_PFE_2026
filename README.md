@@ -178,17 +178,25 @@ Features:
 ![Supplier Interface](https://drive.google.com/uc?id=1IrgT23THbtqrrbSx-QYeFSq13sYOlk8A)  
 **Demo Video:** [Supplier Workflow](https://drive.google.com/file/d/1z-taglKqUk3bOl7pUZqCvxwtLqNhj-7z/view?usp=sharing)
 
+<br>
+
 ### 📊 Manager Interface
 ![Manager Interface](https://drive.google.com/uc?id=1pHruU34ZxZdzmxznhhlUnJIydx50mMsf)  
 **Demo Video:** [Manager Workflow](https://drive.google.com/file/d/1flbgS3rr_yNCE6e46GnTgkijznsf3Ckx/view?usp=drive_link)
+
+<br>
 
 ### 🛒 Client Interface
 ![Client Interface](https://drive.google.com/uc?id=1DUafhG6lbqTeT6inhlVUaaFfDm_lnUOW)  
 **Demo Video:** [Client Workflow](https://drive.google.com/file/d/1ywNUr1047s2mG4d2Cy64gkyt3HnNV_Mt/view?usp=drive_link)
 
+<br>
+
 ### ⚙️ Administrator Interface
 ![Administrator Interface](https://drive.google.com/uc?id=15OAAW0OMGIJ2F1PBBJF76xH8TEEYCmQ-)  
 **Demo Video:** [Administrator Workflow](https://drive.google.com/file/d/1XpTn4Xpwu1JyY_jSefTJ2hSV8s127TFV/view?usp=drive_link)
+
+<br>
 
 ---
 ## 🏗️ Project Architecture
@@ -565,17 +573,25 @@ Fonctionnalités :
 ![Interface Fournisseur](https://drive.google.com/uc?id=1IrgT23THbtqrrbSx-QYeFSq13sYOlk8A)  
 **Vidéo Démo :** [Vue Fournisseur](https://drive.google.com/file/d/1z-taglKqUk3bOl7pUZqCvxwtLqNhj-7z/view?usp=sharing)
 
+<br>
+
 ### 📊 Interface Gestionnaire
 ![Interface Gestionnaire](https://drive.google.com/uc?id=1pHruU34ZxZdzmxznhhlUnJIydx50mMsf)  
 **Vidéo Démo :** [Vue Gestionnaire](https://drive.google.com/file/d/1flbgS3rr_yNCE6e46GnTgkijznsf3Ckx/view?usp=drive_link)
+
+<br>
 
 ### 🛒 Interface Client
 ![Interface Client](https://drive.google.com/uc?id=1DUafhG6lbqTeT6inhlVUaaFfDm_lnUOW)  
 **Vidéo Démo :** [Vue Client](https://drive.google.com/file/d/1ywNUr1047s2mG4d2Cy64gkyt3HnNV_Mt/view?usp=drive_link)
 
+<br>
+
 ### ⚙️ Interface Administrateur
 ![Interface Administrateur](https://drive.google.com/uc?id=15OAAW0OMGIJ2F1PBBJF76xH8TEEYCmQ-)  
 **Vidéo Démo :** [Vue Administrateur](https://drive.google.com/file/d/1XpTn4Xpwu1JyY_jSefTJ2hSV8s127TFV/view?usp=drive_link)
+
+<br>
 
 ---
 
