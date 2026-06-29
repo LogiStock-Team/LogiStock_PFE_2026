@@ -1,21 +1,12 @@
-<p align="center">
-  <img src="https://drive.google.com/uc?id=1EvzkKywXmq366k6nRjM9hSKySdmh6ko9" width="250" alt="LogiStock Logo"/>
-</p>
+<h1 align="center">
+LogiStock
+</h1>
+
 <p align="center">
 B2B Stock and Logistics Management Platform
 </p>
 
 <br>
-
----
-
-<br>
-# 🌍 Language / Langue
-
-- [🇬🇧 English Version](#-logistock)
-- [🇫🇷 Version Française](#-version-francaise)
-
----
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-Frontend-blue" />
@@ -24,7 +15,22 @@ B2B Stock and Logistics Management Platform
   <img src="https://img.shields.io/badge/JWT-Authentication-red" />
 </p>
 
-# 🇬🇧 LogiStock
+---
+## 🌍 Navigation
+
+- 🇬🇧 [English Version](#english)
+- 🇫🇷 [Version Française](#francais)
+
+
+---
+
+<a id="english"></a>
+
+# 🇬🇧 English Version
+
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1EvzkKywXmq366k6nRjM9hSKySdmh6ko9" width="250" alt="LogiStock Logo"/>
+</p>
 
 ## 📦 About the Project
 
@@ -159,7 +165,260 @@ Features:
 
 ---
 
-# 🇫🇷 Version Francaise
+## 🔐 Authentication & Access Management
+![Login](https://drive.google.com/uc?id=1hOVz9orLu8gSlNmqUKDBgLLJ54mjZAfC)  
+![Registration](https://drive.google.com/uc?id=1BbJZkM4D1Aro07IqIJ3iHG2qrx51JKOJ)  
+![Roles and Signature](https://drive.google.com/uc?id=1dfzBYG0_ps58sKiVbNJBpwT-uAo3wup9)  
+![Invoice](https://drive.google.com/uc?id=1CGyw3PlpEXoKJbc2-T72tmWyo25KBF5C)  
+
+---
+
+## 👤 User Interfaces & Demonstrations
+### 🧑‍💼 Supplier Interface
+![Supplier Interface](https://drive.google.com/uc?id=1IrgT23THbtqrrbSx-QYeFSq13sYOlk8A)  
+**Demo Video:** [Supplier Workflow](https://drive.google.com/file/d/1z-taglKqUk3bOl7pUZqCvxwtLqNhj-7z/view?usp=sharing)
+
+### 📊 Manager Interface
+![Manager Interface](https://drive.google.com/uc?id=1pHruU34ZxZdzmxznhhlUnJIydx50mMsf)  
+**Demo Video:** [Manager Workflow](https://drive.google.com/file/d/1flbgS3rr_yNCE6e46GnTgkijznsf3Ckx/view?usp=drive_link)
+
+### 🛒 Client Interface
+![Client Interface](https://drive.google.com/uc?id=1DUafhG6lbqTeT6inhlVUaaFfDm_lnUOW)  
+**Demo Video:** [Client Workflow](https://drive.google.com/file/d/1ywNUr1047s2mG4d2Cy64gkyt3HnNV_Mt/view?usp=drive_link)
+
+### ⚙️ Administrator Interface
+![Administrator Interface](https://drive.google.com/uc?id=15OAAW0OMGIJ2F1PBBJF76xH8TEEYCmQ-)  
+**Demo Video:** [Administrator Workflow](https://drive.google.com/file/d/1XpTn4Xpwu1JyY_jSefTJ2hSV8s127TFV/view?usp=drive_link)
+
+---
+## 🏗️ Project Architecture
+
+LogiStock follows a layered architecture based on a modern web application structure.
+
+The system is divided into three main layers:
+
+- Presentation Layer: Handles user interaction through the React interface.
+- Business Layer: Contains the application logic and business rules.
+- Data Access Layer: Manages communication with the database.
+
+```text
+                User Interface
+                     │
+                     ▼
+             Frontend (React)
+                     │
+                     ▼
+              REST API Layer
+                     │
+                     ▼
+          Backend (Spring Boot)
+                     │
+                     ▼
+           Business Logic Layer
+                     │
+                     ▼
+             Data Access Layer
+                     │
+                     ▼
+              MySQL Database
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+LogiStock/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── hooks/
+│   │   └── routes/
+│   │
+│   └── package.json
+│
+├── backend/
+│   ├── src/
+│   │   ├── controller/
+│   │   ├── service/
+│   │   ├── repository/
+│   │   ├── entity/
+│   │   ├── security/
+│   │   └── config/
+│   │
+│   └── pom.xml
+│
+├── database/
+│
+├── docs/
+│
+└── README.md
+```
+
+---
+
+# 🚀 Installation & Setup
+
+Follow these steps to run the project locally.
+
+---
+
+## 1. Clone Repository
+
+```bash
+git clone https://github.com/LogiStock-Team/LogiStock_PFE_2026.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd LogiStock_PFE_2026
+```
+
+---
+
+# Backend Setup
+
+Go to the backend folder:
+
+```bash
+cd backend
+```
+
+Install dependencies:
+
+```bash
+mvn clean install
+```
+
+Run the Spring Boot application:
+
+```bash
+mvn spring-boot:run
+```
+
+Backend server:
+
+```text
+http://localhost:8080
+```
+
+---
+
+# Frontend Setup
+
+Open another terminal:
+
+```bash
+cd frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Frontend server:
+
+```text
+http://localhost:5173
+```
+
+---
+
+# ⚙️ Database Configuration
+
+The project uses MySQL.
+
+Required configuration:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/logistock
+spring.datasource.username=root
+spring.datasource.password=your_password
+```
+
+Before running the application:
+
+- Create the database
+- Configure database credentials
+- Start MySQL server
+
+---
+
+# 🔒 Security
+
+LogiStock implements several security mechanisms:
+
+## Authentication
+
+- JWT-based authentication
+- Secure login system
+- Protected API endpoints
+
+## Authorization
+
+- Role-Based Access Control (RBAC)
+- Permission management
+- Restricted access according to user roles
+
+## Data Protection
+
+- Password encryption
+- Secure communication between layers
+- Validation of user requests
+
+---
+
+# 📈 Future Improvements
+
+Possible improvements for future versions:
+
+- 📱 Mobile application
+- 🔔 Real-time notifications
+- 📊 Advanced analytics dashboard
+- 🤖 AI-based stock demand prediction
+- 🏢 Multi-warehouse management
+- 📍 Real-time delivery tracking
+- ☁️ Cloud deployment
+- 🔄 Automated backups
+---
+# 👨‍💻 Development Team
+## Final Year Project (PFE)
+Developed by:
+
+- Safaa Mounkid
+- Marwa Maqsoudi
+- Meryem Mazzi
+
+---
+# 📜 License 
+
+This project was developed for academic purposes as part of a Final Year Project (PFE).
+
+All rights reserved © 2026.
+
+---
+
+<br>
+
+<a id="francais"></a>
+
+# 🇫🇷 Version Française
+
+<p align="center">
+<img src="https://drive.google.com/uc?id=1EvzkKywXmq366k6nRjM9hSKySdmh6ko9" width="250" alt="Logo LogiStock"/>
+</p>
 
 ## 📦 À propos du projet
 
@@ -293,557 +552,34 @@ Fonctionnalités :
 - Maven
 
 ---
-# 🇬🇧 Authentication & Access Management
-
-## 🔐 Login Page
-
-The login page allows users to securely access the platform according to their assigned role.
-
-Features:
-
-- Secure authentication
-- JWT-based session management
-- Role-based redirection
-- Protected routes
-
-![Login](https://drive.google.com/uc?id=1hOVz9orLu8gSlNmqUKDBgLLJ54mjZAfC)
+## 🔐 Authentification et Gestion des Accès
+![Connexion](https://drive.google.com/uc?id=1hOVz9orLu8gSlNmqUKDBgLLJ54mjZAfC)  
+![Inscription](https://drive.google.com/uc?id=1BbJZkM4D1Aro07IqIJ3iHG2qrx51JKOJ)  
+![Gestion des rôles](https://drive.google.com/uc?id=1dfzBYG0_ps58sKiVbNJBpwT-uAo3wup9)  
+![Facture](https://drive.google.com/uc?id=1CGyw3PlpEXoKJbc2-T72tmWyo25KBF5C)  
 
 ---
 
-## 📝 Registration Page
+## 👤 Interfaces utilisateurs et démonstrations
+### 🧑‍💼 Interface Fournisseur
+![Interface Fournisseur](https://drive.google.com/uc?id=1IrgT23THbtqrrbSx-QYeFSq13sYOlk8A)  
+**Vidéo Démo :** [Vue Fournisseur](https://drive.google.com/file/d/1z-taglKqUk3bOl7pUZqCvxwtLqNhj-7z/view?usp=sharing)
 
-New users can create an account and request access to the platform.
+### 📊 Interface Gestionnaire
+![Interface Gestionnaire](https://drive.google.com/uc?id=1pHruU34ZxZdzmxznhhlUnJIydx50mMsf)  
+**Vidéo Démo :** [Vue Gestionnaire](https://drive.google.com/file/d/1flbgS3rr_yNCE6e46GnTgkijznsf3Ckx/view?usp=drive_link)
 
-Features:
+### 🛒 Interface Client
+![Interface Client](https://drive.google.com/uc?id=1DUafhG6lbqTeT6inhlVUaaFfDm_lnUOW)  
+**Vidéo Démo :** [Vue Client](https://drive.google.com/file/d/1ywNUr1047s2mG4d2Cy64gkyt3HnNV_Mt/view?usp=drive_link)
 
-- User registration
-- Account creation request
-- Validation workflow
-- Secure credential management
-
-![Registration](https://drive.google.com/uc?id=1BbJZkM4D1Aro07IqIJ3iHG2qrx51JKOJ)
-
----
-
-# 👤 Roles & Digital Signature
-
-The platform implements Role-Based Access Control (RBAC) to ensure that each user accesses only the functionalities related to their role.
-
-In addition, LogiStock integrates a digital signature system that enables secure validation of contracts and important documents.
-
-Features:
-
-- Role management
-- Permission assignment
-- Secure document validation
-- Electronic signature workflow
-- Access control
-
-![Roles and Signature](https://drive.google.com/uc?id=1dfzBYG0_ps58sKiVbNJBpwT-uAo3wup9)
+### ⚙️ Interface Administrateur
+![Interface Administrateur](https://drive.google.com/uc?id=15OAAW0OMGIJ2F1PBBJF76xH8TEEYCmQ-)  
+**Vidéo Démo :** [Vue Administrateur](https://drive.google.com/file/d/1XpTn4Xpwu1JyY_jSefTJ2hSV8s127TFV/view?usp=drive_link)
 
 ---
 
-# 📄 Invoice Management
-
-LogiStock automatically generates invoices associated with completed orders.
-
-Features:
-
-- Invoice generation
-- Order-to-invoice conversion
-- Invoice tracking
-- Downloadable invoices
-- Centralized invoice management
-
-![Invoice](https://drive.google.com/uc?id=1CGyw3PlpEXoKJbc2-T72tmWyo25KBF5C)
-
----
-
-# 🇫🇷 Authentification et Gestion des Accès
-
-## 🔐 Page de connexion
-
-La page de connexion permet aux utilisateurs d'accéder à la plateforme de manière sécurisée selon leur rôle.
-
-Fonctionnalités :
-
-- Authentification sécurisée
-- Gestion des sessions avec JWT
-- Redirection selon le rôle
-- Protection des routes
-
-![Connexion](https://drive.google.com/uc?id=1hOVz9orLu8gSlNmqUKDBgLLJ54mjZAfC)
-
----
-
-## 📝 Page d'inscription
-
-Les nouveaux utilisateurs peuvent créer un compte et demander l'accès à la plateforme.
-
-Fonctionnalités :
-
-- Création de compte
-- Demande d'inscription
-- Processus de validation
-- Gestion sécurisée des identifiants
-
-![Inscription](https://drive.google.com/uc?id=1BbJZkM4D1Aro07IqIJ3iHG2qrx51JKOJ)
-
----
-
-# 👤 Gestion des rôles et Signature électronique
-
-La plateforme implémente un système de contrôle d'accès basé sur les rôles (RBAC) afin que chaque utilisateur accède uniquement aux fonctionnalités qui lui sont autorisées.
-
-LogiStock intègre également un système de signature électronique permettant la validation sécurisée des contrats et documents importants.
-
-Fonctionnalités :
-
-- Gestion des rôles
-- Attribution des permissions
-- Validation sécurisée des documents
-- Processus de signature électronique
-- Contrôle des accès
-
-![Gestion des rôles](https://drive.google.com/uc?id=1dfzBYG0_ps58sKiVbNJBpwT-uAo3wup9)
-
----
-
-# 📄 Gestion des factures
-
-LogiStock génère automatiquement les factures associées aux commandes validées.
-
-Fonctionnalités :
-
-- Génération automatique des factures
-- Conversion commande → facture
-- Suivi des factures
-- Téléchargement des factures
-- Gestion centralisée
-
-![Facture](https://drive.google.com/uc?id=1CGyw3PlpEXoKJbc2-T72tmWyo25KBF5C)
-
----
-# 🇬🇧 User Interfaces & Demonstrations
-
-This section presents the different interfaces provided by LogiStock according to each user role.
-
-Each user has a dedicated workspace with functionalities adapted to their responsibilities.
-
----
-
-# 🧑‍💼 Supplier Interface
-
-The supplier interface allows suppliers to manage their products, process customer orders, and monitor delivery operations.
-
-![Supplier Interface](https://drive.google.com/uc?id=1IrgT23THbtqrrbSx-QYeFSq13sYOlk8A)
-
-## Features
-
-- Product management
-- Stock update
-- Order reception
-- Delivery tracking
-- Invoice generation
-
----
-
-## 🎥 Demo Video – Supplier View
-
-Watch the supplier workflow demonstration:
-
-https://drive.google.com/file/d/1z-taglKqUk3bOl7pUZqCvxwtLqNhj-7z/view?usp=sharing
-
----
-
-# 📊 Manager Interface
-
-The manager interface provides tools for supervising inventory and logistics operations.
-
-![Manager Interface](https://drive.google.com/uc?id=1pHruU34ZxZdzmxznhhlUnJIydx50mMsf)
-
-## Features
-
-- Inventory monitoring
-- Logistics supervision
-- Operation validation
-- Order management
-- Performance monitoring
-
----
-
-## 🎥 Demo Video – Manager View
-
-Watch the manager workflow demonstration:
-
-https://drive.google.com/file/d/1flbgS3rr_yNCE6e46GnTgkijznsf3Ckx/view?usp=drive_link
-
----
-
-# 🛒 Client Interface
-
-The client interface allows customers to browse available products and manage their purchases.
-
-![Client Interface](https://drive.google.com/uc?id=1DUafhG6lbqTeT6inhlVUaaFfDm_lnUOW)
-
-## Features
-
-- Product catalog consultation
-- Product search
-- Order placement
-- Order tracking
-- Invoice consultation
-- Profile management
-
----
-
-## 🎥 Demo Video – Client View
-
-Watch the client workflow demonstration:
-
-https://drive.google.com/file/d/1ywNUr1047s2mG4d2Cy64gkyt3HnNV_Mt/view?usp=drive_link
-
----
-
-# ⚙️ Administrator Interface
-
-The administrator interface provides complete control over the platform configuration and users.
-
-![Administrator Interface](https://drive.google.com/uc?id=15OAAW0OMGIJ2F1PBBJF76xH8TEEYCmQ-)
-
-## Features
-
-- User management
-- Role and permission management
-- System configuration
-- Platform monitoring
-- Security management
-
----
-
-## 🎥 Demo Video – Administrator View
-
-Watch the administrator workflow demonstration:
-
-https://drive.google.com/file/d/1XpTn4Xpwu1JyY_jSefTJ2hSV8s127TFV/view?usp=drive_link
-
----
-
-# 🇫🇷 Interfaces utilisateurs et démonstrations
-
-Cette partie présente les différentes interfaces proposées par LogiStock selon le rôle de chaque utilisateur.
-
-Chaque acteur possède un espace dédié avec des fonctionnalités adaptées à ses responsabilités.
-
----
-
-# 🧑‍💼 Interface Fournisseur
-
-L’interface fournisseur permet aux fournisseurs de gérer leurs produits, traiter les commandes reçues et suivre les opérations de livraison.
-
-![Interface Fournisseur](https://drive.google.com/uc?id=1IrgT23THbtqrrbSx-QYeFSq13sYOlk8A)
-
-## Fonctionnalités
-
-- Gestion des produits
-- Mise à jour des stocks
-- Réception des commandes
-- Suivi des livraisons
-- Génération des factures
-
----
-
-## 🎥 Démonstration – Vue Fournisseur
-
-Découvrez le fonctionnement de l’espace fournisseur :
-
-https://drive.google.com/file/d/1z-taglKqUk3bOl7pUZqCvxwtLqNhj-7z/view?usp=sharing
-
----
-
-# 📊 Interface Gestionnaire
-
-L’interface gestionnaire fournit les outils nécessaires pour superviser les opérations de stock et de logistique.
-
-![Interface Gestionnaire](https://drive.google.com/uc?id=1pHruU34ZxZdzmxznhhlUnJIydx50mMsf)
-
-## Fonctionnalités
-
-- Surveillance des stocks
-- Supervision logistique
-- Validation des opérations
-- Gestion des commandes
-- Suivi des performances
-
----
-
-## 🎥 Démonstration – Vue Gestionnaire
-
-Découvrez le fonctionnement de l’espace gestionnaire :
-
-https://drive.google.com/file/d/1flbgS3rr_yNCE6e46GnTgkijznsf3Ckx/view?usp=drive_link
-
----
-
-# 🛒 Interface Client
-
-L’interface client permet aux utilisateurs de consulter les produits disponibles et de gérer leurs achats.
-
-![Interface Client](https://drive.google.com/uc?id=1DUafhG6lbqTeT6inhlVUaaFfDm_lnUOW)
-
-## Fonctionnalités
-
-- Consultation du catalogue produit
-- Recherche de produits
-- Passage de commandes
-- Suivi des commandes
-- Consultation des factures
-- Gestion du profil
-
----
-
-## 🎥 Démonstration – Vue Client
-
-Découvrez le fonctionnement de l’espace client :
-
-https://drive.google.com/file/d/1ywNUr1047s2mG4d2Cy64gkyt3HnNV_Mt/view?usp=drive_link
-
----
-
-# ⚙️ Interface Administrateur
-
-L’interface administrateur permet de gérer la configuration globale de la plateforme.
-
-![Interface Administrateur](https://drive.google.com/uc?id=15OAAW0OMGIJ2F1PBBJF76xH8TEEYCmQ-)
-
-## Fonctionnalités
-
-- Gestion des utilisateurs
-- Gestion des rôles et permissions
-- Configuration du système
-- Surveillance de la plateforme
-- Gestion de la sécurité
-
----
-
-## 🎥 Démonstration – Vue Administrateur
-
-Découvrez le fonctionnement de l’espace administrateur :
-
-https://drive.google.com/file/d/1XpTn4Xpwu1JyY_jSefTJ2hSV8s127TFV/view?usp=drive_link
-
----
-# 🏗️ Project Architecture
-
-## 🇬🇧 Architecture Overview
-
-LogiStock follows a layered architecture based on a modern web application structure.
-
-The system is divided into three main layers:
-
-- Presentation Layer: Handles user interaction through the React interface.
-- Business Layer: Contains the application logic and business rules.
-- Data Access Layer: Manages communication with the database.
-
-```text
-                User Interface
-                     │
-                     ▼
-             Frontend (React)
-                     │
-                     ▼
-              REST API Layer
-                     │
-                     ▼
-          Backend (Spring Boot)
-                     │
-                     ▼
-           Business Logic Layer
-                     │
-                     ▼
-             Data Access Layer
-                     │
-                     ▼
-              MySQL Database
-```
-
----
-
-## 📁 Project Structure
-
-```text
-LogiStock/
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── hooks/
-│   │   └── routes/
-│   │
-│   └── package.json
-│
-├── backend/
-│   ├── src/
-│   │   ├── controller/
-│   │   ├── service/
-│   │   ├── repository/
-│   │   ├── entity/
-│   │   ├── security/
-│   │   └── config/
-│   │
-│   └── pom.xml
-│
-├── database/
-│
-├── docs/
-│
-└── README.md
-```
-
----
-
-# 🚀 Installation & Setup
-
-## 🇬🇧 Installation Guide
-
-Follow these steps to run the project locally.
-
----
-
-## 1. Clone Repository
-
-```bash
-git clone https://github.com/LogiStock-Team/LogiStock_PFE_2026.git
-```
-
-Navigate to the project directory:
-
-```bash
-cd LogiStock_PFE_2026
-```
-
----
-
-# Backend Setup
-
-Go to the backend folder:
-
-```bash
-cd backend
-```
-
-Install dependencies:
-
-```bash
-mvn clean install
-```
-
-Run the Spring Boot application:
-
-```bash
-mvn spring-boot:run
-```
-
-Backend server:
-
-```text
-http://localhost:8080
-```
-
----
-
-# Frontend Setup
-
-Open another terminal:
-
-```bash
-cd frontend
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-Frontend server:
-
-```text
-http://localhost:5173
-```
-
----
-
-# ⚙️ Database Configuration
-
-The project uses MySQL.
-
-Required configuration:
-
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/logistock
-spring.datasource.username=root
-spring.datasource.password=your_password
-```
-
-Before running the application:
-
-- Create the database
-- Configure database credentials
-- Start MySQL server
-
----
-
-# 🔒 Security
-
-LogiStock implements several security mechanisms:
-
-## Authentication
-
-- JWT-based authentication
-- Secure login system
-- Protected API endpoints
-
-## Authorization
-
-- Role-Based Access Control (RBAC)
-- Permission management
-- Restricted access according to user roles
-
-## Data Protection
-
-- Password encryption
-- Secure communication between layers
-- Validation of user requests
-
----
-
-# 📈 Future Improvements
-
-Possible improvements for future versions:
-
-- 📱 Mobile application
-- 🔔 Real-time notifications
-- 📊 Advanced analytics dashboard
-- 🤖 AI-based stock demand prediction
-- 🏢 Multi-warehouse management
-- 📍 Real-time delivery tracking
-- ☁️ Cloud deployment
-- 🔄 Automated backups
-
----
-
-# 🇫🇷 Architecture du projet
-
-## Vue générale de l’architecture
+## 🏗️ Architecture du projet
 
 LogiStock adopte une architecture en couches basée sur une structure moderne d’application web.
 
@@ -913,8 +649,6 @@ LogiStock/
 ---
 
 # 🚀 Installation et configuration
-
-## Guide d'installation
 
 Suivez les étapes suivantes pour exécuter le projet localement.
 
@@ -1049,19 +783,8 @@ Les améliorations possibles :
 
 ---
 
-# 👨‍💻 Development Team / Équipe de développement
-
-## 🇬🇧 Final Year Project (PFE)
-
-Developed by:
-
-- Safaa Mounkid
-- Marwa Maqsoudi
-- Meryem Mazzi
-
----
-
-## 🇫🇷 Projet de Fin d'Études (PFE)
+# 👨‍💻 Équipe de développement
+## Projet de Fin d'Études (PFE)
 
 Réalisé par :
 
@@ -1071,17 +794,7 @@ Réalisé par :
 
 ---
 
-# 📜 License / Licence
-
-## 🇬🇧
-
-This project was developed for academic purposes as part of a Final Year Project (PFE).
-
-All rights reserved © 2026.
-
----
-
-## 🇫🇷
+# 📜 Licence
 
 Ce projet a été développé dans un cadre académique dans le cadre d'un Projet de Fin d'Études (PFE).
 
